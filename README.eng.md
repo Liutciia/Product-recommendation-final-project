@@ -18,7 +18,7 @@
 
 ## 🌟 Introduction
 
-Welcome to the Product Recommendation project! This project aims to build a recommendation engine using the K-Nearest Neighbors (KNN) algorithm to suggest products to users based on their preferences and historical data.
+Welcome to the Product Recommendation Predictor! This project aims to build a recommendation engine using the K-Nearest Neighbors (KNN) algorithm to suggest products to users based on their preferences and historical data.
 
 
 ## 📊 Dataset
