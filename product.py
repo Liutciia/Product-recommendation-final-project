@@ -77,6 +77,7 @@ if st.sidebar.button('**PREDICT**'):
    else:
        st.sidebar.write("Error: The predicted value does not correspond to any known product.")
 
+
 # MAIN TEXT
 
 st.header("PRODUCT RECOMMENDATION PREDICTOR")
@@ -87,8 +88,11 @@ with col1:
 
 with col2:
         st.write('''
-        **Problem**: Customers often need help finding products that match their preferences and needs. These can be complementary products that are often bought in addition to the selected product, or related products that are similar to a selected product. Additionally, potential substitutes are similar products that customers might like.
-        **Solution**: A product recommendation application that suggests products based on the user's purchase history and preferences.
+                 **Problem**: Customers frequently require assistance in discovering products that align with their preferences and needs. 
+                 These could include complementary products commonly purchased alongside the selected product, related products that are similar 
+                 to the selected item, or potential substitutes that might appeal to customers.
+
+                 Solution: A product recommendation application that provides personalized suggestions based on the user's purchase history and preferences.
            ''')
 
 with st.expander("**INSTRUCTIONS**"):
@@ -112,28 +116,50 @@ tab1.write('''
 
 
 tab1.write('''
-        **Analysis of the descriptive statistical variables shows**:
-           
-        - There is a wide range of ages among the customers.
-        - Variability in the amounts spent among the customers.
-        - Variability in the ratings of products purchased.           
+       **Analysis of Descriptive Statistical Variables shows**:
+
+        - There is a significant range of ages among the customers.
+        - There is notable variability in the amounts spent by customers.
+        - There is considerable variability in the ratings of the products purchased.          
 ''')
 
 
 tab1.write('''
-        **Univariate analysis of (categorical) variables reveals**:
-           
-        - The most popular item to order is water (spring, boottled, artesian and distilled) while the least popular item is package AC.
-        - The majority of the customers are from the USA; UK and Germany are the next most popular countries, and the smallest groups of customers are from Australia and Canada. 
-        - There are almost twice as many men as women making transactions.
-        - Most transactions correspond to the middle-income customers, whereas low income-customers are the second group and high income-customers tend to  make less transactions.
-        - The biggest group of customers represents the regular customer segment, almost half of the customers belong to a new segment, whereas the premium segment is the smallest group.
-        - There are five categories, being the two most popular electronics and grocery; clothing, books and home decor are equally in demand.
-        - Pepsi is the most common product brand, the rest of the brands are equally in demand with the least demanded brands such as: Whirepool, Mitsubhisi and BlueStar.
-        - Most of the customers are satisfied with a product or service, however, there are some that left a negative feedback.
-        - There is no big difference in the shipping methods, being "same-day" and "express" shipping slightly more popular than the "standard" method.
-        - People use more credit cards than debit.
-        - Orders are mainly delivered, however, there are some of them with the status shipped, processing or pending, that likely depends on the date of order.
+        **Discovering the Trends: What Do Customers Really Like?**
+     There are certain trends and preferences that stand out as a result of analysis:
+
+- **Water: The Star of the Show**
+In a surprising twist, the most popular item flying off the shelves isn't a fancy gadget or a trendy fashion item—it's water! From spring to bottled, artesian to distilled, everyone wants a sip. On the flip side, poor package AC sits lonely on the shelf, barely catching anyone's eye.
+
+- **A Global Gathering**
+As you walk through the marketplace, you notice the accents and languages spoken around you. The majority hail from the USA, making it the largest group. Close behind are folks from the UK and Germany. Interestingly, only a handful come from Australia and Canada, making these countries the least represented.
+
+- **The Gender Balance**
+Men dominate the scene, making nearly twice as many transactions as women. This dynamic adds an intriguing layer to the shopping patterns observed.
+
+- **Income Insights**
+Most shoppers belong to the middle-income bracket, swarming the stalls with their purchases. Low-income shoppers come in next, while high-income customers seem to stroll leisurely, making fewer transactions.
+
+- **Customer Segments: Who's Who?**
+The crowd is diverse. The largest group consists of regular customers, while a significant portion is new, exploring the marketplace with fresh eyes. The premium segment is the most exclusive, with only a select few belonging to this elite group.
+
+- **Category Craze**
+The marketplace offers five categories. Electronics and groceries are the stars of the show, attracting the most attention. Clothing, books, and home decor are equally popular, creating a balanced demand.
+
+- **Brand Battles**
+Pepsi reigns supreme as the most common product brand. Other brands hold their ground, but Whirepool, Mitsubhisi, and BlueStar lag behind, barely catching the shoppers' fancy.
+
+- **Customer Satisfaction: The Good and the Bad**
+Most customers leave with a smile, satisfied with their purchase or service. Yet, a few grumble, leaving negative feedback that stands out in the sea of positive reviews.
+
+- **Shipping Preferences**
+When it comes to shipping, there's no huge difference. "Same-day" and "express" methods are slightly favored over the "standard" option, showing a slight preference for speed.
+
+- **Payment Methods**
+Credit cards are the champions, with more people swiping them than using debit cards.
+
+- **Order Status: The Waiting Game**
+While most orders are delivered promptly, some linger in statuses like shipped, processing, or pending, possibly due to the order date..
    ''')
 
 tab1.write("**Graphs**:")
@@ -142,15 +168,30 @@ with tab1:
 
 
 tab1.write('''
-        **Correlation analysis displays**:
+        **Unveiling Hidden Patterns: A Curious Look at Correlation Analysis**
 
-        - There is a negative relationship between **Country and Customer Age** as well as between **Country and Income**, thus, in certain countries customers are more likely to have a high income than in other countries, the same with the Age, customers of one country tend to be younger than customers of others. 
-        - We can observe a positive relationship between **Age and Customer Segment**, which makes a lot of sense, the older the customer the higher the probability that he/she belongs to the premium segment.
-        - There is a negative relationship between **Age and Feedback**, and positive relationship between Age and Ratings, thus, older customers tend to leave more positive feedback and give higher ratings.
-        - **Customer Segment with Ratings** have a positive relationship: newly arrived customers are likely to receive better service, as a marketing ploy to attract customers and convert them into their clients, as a result, they are more satisfied giving better ratings. Here also can be included **Order Status** for different customer segments.
-        - **Product Brand correlates with Feedback, Order Status and Ratings** in a positive way. Famous and recognised brands, such as Apple, Adidas, etc. have good reputation with mostly positive feedback and high ratings. Moreover, they try to deliver the best customer service (f.e. on-time delivery). 
-        - There is a negative relationship between **Feedback and Ratings**, thus, the higher the ratings the more positive feedback the product receives.
-        - The rest of the correlations remain the same as previously seen.
+As you sift through the data, some fascinating connections come to light:
+
+- **The Country Conundrum**
+Our first clue reveals a negative relationship between Country and Customer Age and Country and Income. In certain countries, customers are more likely to be wealthier and younger compared to others. It's like finding out that in some lands, youthful riches are more common!
+
+- **The Age Advantage**
+Moving on, we uncover a positive relationship between Age and Customer Segment. This makes perfect sense: as customers age, they are more likely to climb into the premium segment. It's as if loyalty and spending power grow stronger with age.
+
+- **Feedback Frequencies**
+Digging deeper, we notice that Age negatively correlates with Feedback, but positively with Ratings. Older customers tend to leave glowing reviews and high ratings. Perhaps wisdom comes with age, leading to more positive shopping experiences.
+
+- **Segment Strategies**
+The relationship between Customer Segment and Ratings is positively intriguing. Newcomers often receive better service, possibly as a marketing strategy to win them over. Satisfied new customers leave higher ratings, helping businesses turn them into loyal clients. Order Status plays a role here too, with different segments experiencing varied service levels.
+
+- **Brand Brilliance**
+Our investigation reveals that Product Brand positively correlates with Feedback, Order Status, and Ratings. Renowned brands like Apple and Adidas, with their stellar reputations, tend to receive positive feedback and high ratings. They ensure top-notch customer service, including on-time deliveries, to maintain their standing.
+
+- **Feedback Formula**
+There's a negative relationship between Feedback and Ratings. The higher the ratings, the more positive the feedback. It's a simple yet powerful connection: happy customers sing praises.
+
+- **Consistent Correlations**
+Lastly, most of the other correlations follow previously seen patterns, maintaining a steady rhythm in the background.
 
            ''')
 
@@ -161,8 +202,19 @@ with tab1:
 
 
 tab1.write('''
-        Through a feature importance analysis and the model performance analysis, the following **8 optimal features** (user input in the app) were selected:
-        Age, Gender, Customer Segment, Product Brand, Product Category, Feedback, Order status, Ratings
+        Based on a comprehensive feature importance analysis and model performance evaluation, the optimal features were identified and selected. These features are:
+
+        - Country
+        - Age
+        - Gender
+        - Customer Segment
+        - Product Brand
+        - Product Category
+        - Feedback
+        - Order Status
+        - Ratings
+                
+        These features represent the most significant factors influencing the model's predictive accuracy and overall performance.
            ''')
 
 
@@ -172,28 +224,32 @@ tab2.write('''
            After training several models, **K-NEAREST NEIGHBOURS model** was selected as the best one. 
            KNN is a supervised learning algorithm that can be used for classification. 
            In the context of recommendation systems, KNN is commonly used to find similar products based on certain characteristics. 
-           The goal is to recommend products that are similar to those the user has viewed or purchased previously.
+           The goal is to recommend products that are similar to those the user has purchased previously.
            The recommendation algorithm is based on a machine learning system that analyzes data to determine user preferences and suggest products that they might genuinely be interested in.
            ''') 
+
+with tab2:
+      st.image("https://miro.medium.com/v2/resize:fit:1151/0*ItVKiyx2F3ZU8zV5", use_column_width = 'auto', caption ="K-NEAREST NEIGHBOURS model")
+
 tab2.write(''' 
            The performance metrics (Accuracy: 0.98; Precision: 0.97; Recall: 0.96; F1-Score: 0.965) indicate that the KNN model is highly effective in recommending relevant products to users.
            ''') 
 
 tab3.write("**CONCLUSIONS**")
 tab3.write('''
-           Providing effective recommendations to your customers is a key way to enhance the end-user experience, retain customers, and keep them happy. 
-           Thus, a product recommendation application that suggests products based on the user's purchase history and preferences, could be a perfect tool.
-           ''')
-tab3.write('''
-           **Advantages**:
-           Interactive and user-friendly interface.
-           Fast and personalized results.
+           Providing effective recommendations to your customers is essential for enhancing the end-user experience, retaining customers, and maintaining their satisfaction. A product recommendation application, which suggests products based on the user's purchase history and preferences, can serve as an invaluable tool.
 
-           **Possible disadvantages**:
-           The limitation of relying on a rating system is that products without user ratings won't be able to give a whole picture. 
-           Therefore, you would have to force recommendations through push surveys or add some fictitious ratings to an unrated product in the system. 
-           Another drawback is that this type of algorithm tends to form groups of similar users who, over time, will receive the same recommendations, 
-           meaning the suggested products will become less personalized over time.
+        **Advantages**:
+
+        - **Interactive and User-Friendly Interface**: The application offers an intuitive and engaging interface, ensuring ease of use for all customers.
+        Fast and Personalized Results: It delivers quick and tailored product recommendations, enhancing the overall shopping experience.
+
+        **Potential Disadvantages**:
+
+        - **Dependence on a Rating System**: Products lacking user ratings may not provide a complete picture. 
+        To address this, you might need to prompt recommendations via push surveys or introduce some hypothetical ratings for unrated products within the system.
+        Homogenization of Recommendations: Over time, the algorithm may create clusters of similar users, leading to repetitive recommendations for these groups. 
+        This could result in the suggested products becoming less personalized, diminishing the uniqueness of the recommendations.
            ''')
 
 
