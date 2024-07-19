@@ -89,7 +89,7 @@ These results indicate that the KNN model is highly effective in recommending re
 
 To try this recommendation system, you can use the following Interactive Streamlit App:
 
-https://laughing-space-doodle-v6wq79g9946cpvg9-8501.app.github.dev/
+[https://laughing-space-doodle-v6wq79g9946cpvg9-8501.app.github.dev/](https://laughing-space-doodle-v6wq79g9946cpvg9-8501.app.github.dev/)
 
 
 ## 📦 Dependencies
