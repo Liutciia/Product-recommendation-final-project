@@ -159,8 +159,7 @@ While most orders are delivered promptly, some linger in statuses like shipped, 
 
 tab1.write("**Graphs**:")
 with tab1:
-   st.image("/workspaces/Product-recommendation-final-project/output.png", use_column_width = 'auto', caption ="Univariate analysis of (categorical) variables")
-
+   st.image("output.png", use_column_width = 'auto', caption ="Univariate analysis of (categorical) variables")
 
 tab1.write('''
         **Unveiling Hidden Patterns: A Curious Look at Correlation Analysis**
@@ -195,7 +194,7 @@ Lastly, most of the other correlations follow previously seen patterns, maintain
 
 tab1.write("**Graphs**:")
 with tab1:
-   st.image("/workspaces/Product-recommendation-final-project/output.corr.png", use_column_width = 'auto', caption ="Correlation analysis")
+   st.image("output.corr.png", use_column_width = 'auto', caption ="Correlation analysis")
 
 
 tab1.write('''
