@@ -8,7 +8,7 @@ import numpy as np
 
 
 # Loading the dataset to get label categories
-df = pd.read_csv('/src/new_retail_data.csv') 
+df = pd.read_csv('/workspaces/Product-recommendation-final-project/new_retail_data.csv') 
 
 
 # Generating product mapping dictionaries
