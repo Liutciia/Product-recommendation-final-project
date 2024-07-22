@@ -8,7 +8,7 @@ import numpy as np
 
 
 # Loading the dataset to get label categories
-df = pd.read_csv('/workspaces/Product-recommendation-final-project/new_retail_data.csv') 
+df = pd.read_csv('new_retail_data.csv') 
 
 
 # Generating product mapping dictionaries
@@ -121,10 +121,13 @@ tab1.write('''
 There are certain trends and preferences that stand out as a result of analysis:
 
 - **Water: The Star of the Show**
-In a surprising twist, the most popular item flying off the shelves isn't a fancy gadget or a trendy fashion item—it's water! From spring to bottled, artesian to distilled, everyone wants a sip. On the flip side, poor package AC sits lonely on the shelf, barely catching anyone's eye.
+In a surprising twist, the most popular item flying off the shelves isn't a fancy gadget or a trendy fashion item—it's water! From spring to bottled, artesian to distilled, everyone wants a sip. 
+On the flip side, poor package AC sits lonely on the shelf, barely catching anyone's eye.
 
-- **A Global Gathering**
-As you walk through the marketplace, you notice the accents and languages spoken around you. The majority hail from the USA, making it the largest group. Close behind are folks from the UK and Germany. Interestingly, only a handful come from Australia and Canada, making these countries the least represented.
+- **Distribution of Customers by their Countries**
+The majority of purchases come from the USA, making it the largest group of buyers. Close behind are customers from the UK and Germany, showing significant engagement. 
+Interestingly, only a few transactions originate from Australia and Canada, marking these countries as the least represented. 
+This diverse distribution of buyers highlights the global reach and appeal of the marketplace, with each purchase contributing to a vibrant, interconnected economy.
 
 - **The Gender Balance**
 Men dominate the scene, making nearly twice as many transactions as women. This dynamic adds an intriguing layer to the shopping patterns observed.
@@ -133,7 +136,7 @@ Men dominate the scene, making nearly twice as many transactions as women. This 
 Most shoppers belong to the middle-income bracket, swarming the stalls with their purchases. Low-income shoppers come in next, while high-income customers seem to stroll leisurely, making fewer transactions.
 
 - **Customer Segments: Who's Who?**
-The crowd is diverse. The largest group consists of regular customers, while a significant portion is new, exploring the marketplace with fresh eyes. The premium segment is the most exclusive, with only a select few belonging to this elite group.
+The largest group consists of regular customers, while a significant portion is new, exploring the marketplace with fresh eyes. The premium segment is the most exclusive, with only a select few belonging to this elite group.
 
 - **Category Craze**
 The marketplace offers five categories. Electronics and groceries are the stars of the show, attracting the most attention. Clothing, books, and home decor are equally popular, creating a balanced demand.
@@ -165,7 +168,7 @@ tab1.write('''
 As you sift through the data, some fascinating connections come to light:
 
 - **The Country Conundrum**
-Our first clue reveals a negative relationship between Country and Customer Age and Country and Income. In certain countries, customers are more likely to be wealthier and younger compared to others. It's like finding out that in some lands, youthful riches are more common!
+The initial findings show that there is a negative relationship between a customer's Country and their Age, as well as between their Country and Income. In certain countries, customers are more likely to be wealthier and younger compared to others. It's like finding out that in some lands, youthful riches are more common!
 
 - **The Age Advantage**
 Moving on, we uncover a positive relationship between Age and Customer Segment. This makes perfect sense: as customers age, they are more likely to climb into the premium segment. It's as if loyalty and spending power grow stronger with age.
@@ -174,10 +177,12 @@ Moving on, we uncover a positive relationship between Age and Customer Segment. 
 Digging deeper, we notice that Age negatively correlates with Feedback, but positively with Ratings. Older customers tend to leave glowing reviews and high ratings. Perhaps wisdom comes with age, leading to more positive shopping experiences.
 
 - **Segment Strategies**
-The relationship between Customer Segment and Ratings is positively intriguing. Newcomers often receive better service, possibly as a marketing strategy to win them over. Satisfied new customers leave higher ratings, helping businesses turn them into loyal clients. Order Status plays a role here too, with different segments experiencing varied service levels.
+The relationship between Customer Segment and Ratings is positively intriguing. Newcomers often receive better service, possibly as a marketing strategy to win them over. 
+Satisfied new customers leave higher ratings, helping businesses turn them into loyal clients. Order Status plays a role here too, with different segments experiencing varied service levels.
 
 - **Brand Brilliance**
-Our investigation reveals that Product Brand positively correlates with Feedback, Order Status, and Ratings. Renowned brands like Apple and Adidas, with their stellar reputations, tend to receive positive feedback and high ratings. They ensure top-notch customer service, including on-time deliveries, to maintain their standing.
+Our investigation reveals that Product Brand positively correlates with Feedback, Order Status, and Ratings. Renowned brands like Apple and Adidas, with their stellar reputations, tend to receive positive feedback and high ratings. 
+They ensure top-notch customer service, including on-time deliveries, to maintain their standing.
 
 - **Feedback Formula**
 There's a negative relationship between Feedback and Ratings. The higher the ratings, the more positive the feedback. It's a simple yet powerful connection: happy customers sing praises.
