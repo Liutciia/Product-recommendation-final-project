@@ -3,17 +3,17 @@
 
 ## 📚 Table of Contents
 
-- Introduction
-- Dataset
-- Methodology
-  - Data Preprocessing
-  - Model Training
-- Evaluation
-- Results
-- Usage
-- Dependencies
-- Contributing
-- Contact
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Model Training](#model-training)
+- [Evaluation](#evaluation)
+- [Results](#results)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 
 ## 🌟 Introduction
