@@ -8,7 +8,7 @@ import numpy as np
 
 
 # Loading the dataset to get label categories
-df = pd.read_csv('/workspaces/Product-recommendation-final-project/src/new_retail_data.csv') 
+df = pd.read_csv('/src/new_retail_data.csv') 
 
 
 # Generating product mapping dictionaries
@@ -92,7 +92,7 @@ with col2:
                  These could include complementary products commonly purchased alongside the selected product, related products that are similar 
                  to the selected item, or potential substitutes that might appeal to customers.
 
-                 Solution: A product recommendation application that provides personalized suggestions based on the user's purchase history and preferences.
+                 **Solution**: A product recommendation application that provides personalized suggestions based on the user's purchase history and preferences.
            ''')
 
 with st.expander("**INSTRUCTIONS**"):
@@ -116,17 +116,9 @@ tab1.write('''
 
 
 tab1.write('''
-       **Analysis of Descriptive Statistical Variables shows**:
-
-        - There is a significant range of ages among the customers.
-        - There is notable variability in the amounts spent by customers.
-        - There is considerable variability in the ratings of the products purchased.          
-''')
-
-
-tab1.write('''
         **Discovering the Trends: What Do Customers Really Like?**
-     There are certain trends and preferences that stand out as a result of analysis:
+           
+There are certain trends and preferences that stand out as a result of analysis:
 
 - **Water: The Star of the Show**
 In a surprising twist, the most popular item flying off the shelves isn't a fancy gadget or a trendy fashion item—it's water! From spring to bottled, artesian to distilled, everyone wants a sip. On the flip side, poor package AC sits lonely on the shelf, barely catching anyone's eye.
@@ -159,12 +151,12 @@ When it comes to shipping, there's no huge difference. "Same-day" and "express" 
 Credit cards are the champions, with more people swiping them than using debit cards.
 
 - **Order Status: The Waiting Game**
-While most orders are delivered promptly, some linger in statuses like shipped, processing, or pending, possibly due to the order date..
+While most orders are delivered promptly, some linger in statuses like shipped, processing, or pending, possibly due to the order date.
    ''')
 
 tab1.write("**Graphs**:")
 with tab1:
-   st.image("/workspaces/Product-recommendation-final-project/output.corr.png", use_column_width = 'auto', caption ="Univariate analysis of (categorical) variables")
+   st.image("/workspaces/Product-recommendation-final-project/output.png", use_column_width = 'auto', caption ="Univariate analysis of (categorical) variables")
 
 
 tab1.write('''
@@ -198,7 +190,7 @@ Lastly, most of the other correlations follow previously seen patterns, maintain
 
 tab1.write("**Graphs**:")
 with tab1:
-   st.image("/workspaces/Product-recommendation-final-project/output.png", use_column_width = 'auto', caption ="Correlation analysis")
+   st.image("/workspaces/Product-recommendation-final-project/output.corr.png", use_column_width = 'auto', caption ="Correlation analysis")
 
 
 tab1.write('''
@@ -248,7 +240,7 @@ tab3.write('''
 
         - **Dependence on a Rating System**: Products lacking user ratings may not provide a complete picture. 
         To address this, you might need to prompt recommendations via push surveys or introduce some hypothetical ratings for unrated products within the system.
-        Homogenization of Recommendations: Over time, the algorithm may create clusters of similar users, leading to repetitive recommendations for these groups. 
+        - **Homogenization of Recommendations**: Over time, the algorithm may create clusters of similar users, leading to repetitive recommendations for these groups. 
         This could result in the suggested products becoming less personalized, diminishing the uniqueness of the recommendations.
            ''')
 
